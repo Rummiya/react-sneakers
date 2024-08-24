@@ -1,0 +1,155 @@
+.content-loader {
+    width: 210px;
+    border: 1px solid #F3F3F3;
+    border-radius: 40px;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    width: 210px;
+
+    padding: 22px 30px;
+    padding-bottom: 40px;
+
+    border: 1px solid #F3F3F3;
+    border-radius: 40px;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.05%);
+        transform: translateY(-10px);
+    }
+
+    .heart-btn {
+        position: absolute;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border: 1px solid #F2F2F2;
+        border-radius: 8px;
+        background-color: inherit;
+    
+        padding: 10px;
+        cursor: pointer;
+        transition: all .2s ease;
+    
+        &:hover {
+            border-color: #f9487a;
+            background-color: #FEF0F0;
+    
+            path {
+                stroke: #f9487a;
+            }
+        }
+    
+        // &::after {
+        //     content: "";
+        //     background-image: url('./../../assets/products//icons/heart-normal.svg');
+            
+        //     width: 16px;
+        //     height: 14px;
+        // }
+    }
+    
+    .heart-btn--active {
+        background-color: #FEF0F0;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url('./../../assets/products//icons/heart-active.svg');
+            
+            width: 16px;
+            height: 14px;
+        }
+    }
+
+    &__img {
+        width: 133px;
+        margin-bottom: 14px;
+    }
+
+    &__gender {
+        font-size: 11px;
+        font-weight: 500;
+        color: #BDBDBD;
+    }
+    
+    &__desc {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 14px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        .card__price {
+
+            span {
+                font-size: 12px;
+                font-weight: 500;
+                color: #BDBDBD;    
+            }
+            
+            p {
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        .card__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            border: 1px solid #F2F2F2;
+            border-radius: 8px;
+            background-color: inherit;
+        
+            padding: 10px;
+            cursor: pointer;
+            transition: all .2s ease;
+        
+            &::after {
+                content: "";
+                background-image: url('./../../assets/products//icons/plus.svg');
+                width: 12px;
+                height: 12px;
+            }
+        
+            &:hover {
+                border-color: #BDBDBD;
+                // background: #cffad6;
+        
+                // path {
+                //     fill: #BDBDBD;
+                // }
+            }
+        }
+        
+        .card__btn--active {
+            background: linear-gradient( #89F09C, #3CC755);
+            border: 1px solid #3CC755;
+        
+            &::after {
+                content: "";
+                background-image: url('./../../assets/products//icons/vector.svg');
+                width: 12px;
+                height: 12px;
+            } 
+            
+            &:hover {
+                opacity: .8;
+                background: linear-gradient( #89F09C, #3CC755);
+            }
+        }
+    }
+}

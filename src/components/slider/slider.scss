@@ -1,0 +1,25 @@
+.swiper-button-prev, 
+.swiper-button-next {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 100%;
+
+    &::after {
+        content: '';
+        font-family: none;
+        background-image: url('./../../assets/slider/mini-arrow.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 18px;
+    }
+
+    &.swiper-button-disabled {
+        opacity: 0;
+    }
+}
+
+.swiper-button-next::after {
+    transform: rotate(180deg);
+}
