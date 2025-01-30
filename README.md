@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# React Sneakers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🛠 Стек технологий: **React, React Router, React Content Loader, MockApi**
 
-## Available Scripts
+Этот проект представляет собой небольшой интернет-магазин для покупки кроссовок, реализованный на освнове React + Webpack. Основное внимание уделено удобству пользователей, плавной работе интерфейса и быстродействию.
 
-In the project directory, you can run:
+### 🚀 Функционал:
+- Загрузка списка товаров из MockAPI.
+- Каталог кроссовок, при выборе пары откывается страница с развенутой информацией.
+- Сотртировка по категориям ( женские/мужские ).
+- Удобная поисковая система по бренду, найдет нужный вариант в независимости от регистра ввода.
+- Добавление в корзину.
+- Динамический пересчет итоговой стоимости заказа.
+- Сохранение корзины в базу данных MockApi, чтобы выбранные товары не терялись при перезагрузке страницы.
+- Иметация процесса заказа, раздел с оазвернутой информацией об истории заказов, испория заказов также хранится в бд.
+- Добавление в избранные, которые также хранятся в бд.
+- Лоадеры для плавной загрузки данных и улучшенного пользовательского опыта.
+- Маршрутизация через React Router, позволяющая легко переключаться между страницами каталога и корзины.
 
-### `yarn start`
+## Установка и запуск
+### 📌[Демо](https://react-sneakers-alpha.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Установка и запуск
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Клонирование репозитория
+- git clone https://github.com/Rummiya/react-pizza.git
+- cd <имя_папки_проекта>
 
-### `yarn test`
+### 2. Установка зависимостей
+- yarn install 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 3. Запуск проекта
+- yarn dev
