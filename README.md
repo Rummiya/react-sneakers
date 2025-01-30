@@ -23,7 +23,7 @@
 ## Установка и запуск
 
 ### 1. Клонирование репозитория
-- git clone https://github.com/Rummiya/react-pizza.git
+- git clone https://github.com/Rummiya/react-sneakers.git
 - cd <имя_папки_проекта>
 
 ### 2. Установка зависимостей
